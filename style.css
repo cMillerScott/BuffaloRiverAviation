@@ -1,0 +1,161 @@
+@import url("/Artwork/Buffalo-River-Aviation/Grava/stylesheet.css");
+
+:root {
+  --white: #ffffff;
+  --gold: #cc932f;
+  --blue: #142a4a;
+
+  --font: "Grava";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: var(--gold);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.icon {
+  margin-left: 6rem;
+  height: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.25);
+}
+
+.nav {
+  display: flex;
+  width: 40%;
+  margin-right: 6rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+}
+
+.nav-list li {
+  letter-spacing: 0.25rem;
+  padding: 0.1rem;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 0 0 var(--gold);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-list li:hover {
+  transform: scale(1.1);
+  color: var(--blue);
+  box-shadow: inset 0rem 0 20rem 0 var(--gold);
+}
+
+main {
+  height: 200vh;
+}
+
+.intro {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.intro img {
+  height: 100%;
+  width: 100%;
+}
+
+.mission {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: var(--blue);
+  line-height: 2.5rem;
+  letter-spacing: 0.25rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 42, 74, 0.8) 0%,
+    rgba(20, 42, 74, 0.9) 65%,
+    rgba(20, 42, 74, 1) 100%
+  );
+  color: var(--white);
+  width: 100%;
+}
+
+.link-content {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--white);
+  margin-bottom: 1rem;
+}
+
+.links {
+    width: 20%;
+    letter-spacing: 0.1rem;
+}
+
+.links li {
+    text-align: left;
+    align-self: flex-start;
+    list-style: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.stamp img {
+    height: 275px;
+    width: 275px;
+}
+
+.social {
+    width: 20%;
+    letter-spacing: 0.1rem;
+}
+
+.social li {
+    text-align: right;
+    align-self: flex-end;
+    list-style: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.copyright {
+    letter-spacing: 0.25rem;
+    padding: 0.2rem;
+}
