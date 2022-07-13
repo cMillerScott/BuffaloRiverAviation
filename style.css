@@ -23,6 +23,8 @@ a:active {
   color: inherit;
 }
 
+/* navbar */
+
 .header {
   position: fixed;
   top: 0%;
@@ -40,6 +42,7 @@ a:active {
 .icon {
   margin-left: 6rem;
   height: 2rem;
+  visibility: hidden;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -50,7 +53,6 @@ a:active {
 .nav {
   display: flex;
   width: 40%;
-  margin-right: 6rem;
 }
 
 .nav-list {
@@ -62,7 +64,7 @@ a:active {
 
 .nav-list li {
   letter-spacing: 0.25rem;
-  padding: 0.1rem;
+  padding: 0.2rem;
   border-radius: 0.25rem;
   box-shadow: inset 0 0 0 0 var(--gold);
   transition: all 0.5s ease-in-out;
@@ -74,13 +76,10 @@ a:active {
   box-shadow: inset 0rem 0 20rem 0 var(--gold);
 }
 
-main {
-  height: 200vh;
-}
+/* top photo */
 
 .intro {
-  height: 50vh;
-  width: 100%;
+  height: 65vh;
   position: relative;
 }
 
@@ -89,16 +88,86 @@ main {
   width: 100%;
 }
 
-.mission {
+.mission img {
   position: absolute;
-  top: 40%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -6%);
+  height: 35rem;
+  width: 35rem;
+}
+
+.mission h3 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, 50%);
   text-align: center;
   color: var(--blue);
-  line-height: 2.5rem;
   letter-spacing: 0.25rem;
 }
+
+/* main about content */
+
+.about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  letter-spacing: 0.25rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us h1 {
+  border-bottom: 2.5px solid var(--blue);
+  margin-bottom: 5rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.about-content p {
+  padding: 2rem;
+}
+
+.from-left {
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.from-right {
+  transform: translateX(50%);
+  opacity: 0.25;
+}
+
+.from-left,
+.from-right {
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-us img {
+  height: 20rem;
+}
+
+/* footer */
 
 .footer {
   display: flex;
@@ -125,37 +194,37 @@ main {
 }
 
 .links {
-    width: 20%;
-    letter-spacing: 0.1rem;
+  width: 20%;
+  letter-spacing: 0.1rem;
 }
 
 .links li {
-    text-align: left;
-    align-self: flex-start;
-    list-style: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  text-align: left;
+  align-self: flex-start;
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .stamp img {
-    height: 275px;
-    width: 275px;
+  height: 275px;
+  width: 275px;
 }
 
 .social {
-    width: 20%;
-    letter-spacing: 0.1rem;
+  width: 20%;
+  letter-spacing: 0.1rem;
 }
 
 .social li {
-    text-align: right;
-    align-self: flex-end;
-    list-style: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  text-align: right;
+  align-self: flex-end;
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .copyright {
-    letter-spacing: 0.25rem;
-    padding: 0.2rem;
+  letter-spacing: 0.25rem;
+  padding: 0.2rem;
 }

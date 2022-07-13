@@ -1,17 +1,24 @@
-let header = document.querySelector(".header");
-let icon = document.querySelector(".icon");
+// page variables
+
+const header = document.querySelector(".header");
+const icon = document.querySelector(".icon");
 const intro = document.querySelector(".intro");
-let blue = getComputedStyle(document.documentElement).getPropertyValue(
+const blue = getComputedStyle(document.documentElement).getPropertyValue(
   "--blue"
 );
+const sliders = document.querySelectorAll(".slide-in");
+// const images = document.querySelectorAll("[data-src]");
 
-const observerOptions = { rootMargin: "-300px 0px 0px 0px" };
+// navigation animation
 
-const observer = new IntersectionObserver(function (entries, observer) {
+const navObserverOptions = { rootMargin: "-450px" };
+
+const navObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       header.style.background = blue;
       header.style.boxShadow = "0px 2px 20px" + blue;
+      console.log(entry.target);
       setTimeout(function () {
         icon.style.visibility = "visible";
       }, 250);
@@ -21,6 +28,57 @@ const observer = new IntersectionObserver(function (entries, observer) {
       icon.style.visibility = "hidden";
     }
   });
-}, observerOptions);
+}, navObserverOptions);
 
-observer.observe(intro);
+navObserver.observe(intro);
+
+// slide-in animation
+
+const appearOptions = { threshold: 1 };
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
+
+//image animation
+
+// function preloadImage(img) {
+//   const src = img.getAttribute("data-src");
+//   if (!src) {
+//     return;
+//   }
+
+//   img.src = src;
+// }
+
+// const imgOptions = { rootMargin: "-400px" };
+
+// const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       return;
+//     } else {
+//       preloadImage(entry.target);
+//       imgObserver.unobserve(entry.target);
+//     }
+//   });
+// }, imgOptions);
+
+// images.forEach((image) => {
+//   imgObserver.observe(image);
+// });
