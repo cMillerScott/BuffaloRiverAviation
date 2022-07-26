@@ -13,6 +13,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: var(--font);
+  /* font-size: 1vw; */
 }
 
 a,
@@ -53,6 +54,7 @@ a:active {
 .nav {
   display: flex;
   width: 40%;
+  /* border: 1px solid white; */
 }
 
 .nav-list {
@@ -60,6 +62,7 @@ a:active {
   justify-content: space-evenly;
   width: 100%;
   list-style: none;
+  /* border: 1px solid #cc932f; */
 }
 
 .nav-list li {
@@ -73,38 +76,48 @@ a:active {
 .nav-list li:hover {
   transform: scale(1.1);
   color: var(--blue);
-  box-shadow: inset 0rem 0 20rem 0 var(--gold);
+  box-shadow: inset 0rem 0 8rem 0 var(--gold);
 }
 
 /* top photo */
 
-.intro {
-  height: 65vh;
-  position: relative;
-}
-
-.intro img {
-  height: 100%;
+main {
   width: 100%;
 }
 
-.mission img {
+.intro {
+  height: 65vh;
+  background-image: url(/Photos/clouds.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* .intro img {
+  height: 100%;
+  width: 100%;
+} */
+
+.mission {
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -6%);
-  height: 35rem;
-  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  color: var(--blue);
+}
+
+.mission img {
+  height: 60vh;
+  max-width: 100%;
 }
 
 .mission h3 {
   position: absolute;
-  top: 82%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center;
-  color: var(--blue);
-  letter-spacing: 0.25rem;
+  bottom: 0;
 }
 
 /* main about content */
@@ -125,6 +138,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* border: 1px solid #142a4a; */
 }
 
 .about-us h1 {
@@ -136,6 +150,8 @@ a:active {
   display: flex;
   align-items: center;
   width: 50%;
+  /* border: 1px solid #142a4a; */
+  /* padding: 2rem; */
 }
 
 .about-content p {
@@ -152,6 +168,12 @@ a:active {
   opacity: 0.25;
 }
 
+.about-us img {
+  height: 35vh;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px -2px var(--blue);
+}
+
 .from-left,
 .from-right {
   transition: transform 0.5s ease-in, opacity 0.5s ease-in;
@@ -163,9 +185,10 @@ a:active {
   transform: translateX(0);
 }
 
-.about-us img {
+/* .about-us img {
+  
   height: 20rem;
-}
+} */
 
 /* footer */
 
@@ -191,24 +214,29 @@ a:active {
   align-items: center;
   border-bottom: 2px solid var(--white);
   margin-bottom: 1rem;
+  border: 1px solid white;
 }
 
 .links {
   width: 20%;
   letter-spacing: 0.1rem;
+  color: #cc932f;
+  border: 1px solid white;
 }
 
 .links li {
   text-align: left;
   align-self: flex-start;
   list-style: none;
+  height: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .stamp img {
-  height: 275px;
-  width: 275px;
+  width: auto;
+  height: 35vh;
+  border: 1px solid white;
 }
 
 .social {
@@ -226,5 +254,6 @@ a:active {
 
 .copyright {
   letter-spacing: 0.25rem;
-  padding: 0.2rem;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
 }

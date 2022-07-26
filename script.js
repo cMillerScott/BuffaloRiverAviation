@@ -11,17 +11,16 @@ const sliders = document.querySelectorAll(".slide-in");
 
 // navigation animation
 
-const navObserverOptions = { rootMargin: "-450px" };
-
+const navObserverOptions = { threshold: 0.85 };
 const navObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       header.style.background = blue;
       header.style.boxShadow = "0px 2px 20px" + blue;
-      console.log(entry.target);
       setTimeout(function () {
-        icon.style.visibility = "visible";
-      }, 250);
+      icon.style.visibility = "visible";
+      }, 200);
+      // icon.style.zIndex = 1;
     } else if (entry.isIntersecting) {
       header.style.background = "transparent";
       header.style.boxShadow = "none";
