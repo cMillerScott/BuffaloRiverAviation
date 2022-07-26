@@ -1,4 +1,4 @@
-@import url("/Artwork/Buffalo-River-Aviation/Grava/stylesheet.css");
+@import url("/Assets/Grava/stylesheet.css");
 
 :root {
   --white: #ffffff;
@@ -13,7 +13,6 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: var(--font);
-  /* font-size: 1vw; */
 }
 
 a,
@@ -87,15 +86,15 @@ main {
 
 .intro {
   height: 65vh;
-  background-image: url(/Photos/clouds.jpg);
+  background-image: url("/Assets/Photos/clouds.jpg");
   background-size: 100% 100%;
   position: relative;
 }
 
-/* .intro img {
+.intro img {
   height: 100%;
   width: 100%;
-} */
+}
 
 .mission {
   position: absolute;

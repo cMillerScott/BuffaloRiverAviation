@@ -19,7 +19,7 @@ const navObserver = new IntersectionObserver(function (entries, observer) {
       header.style.boxShadow = "0px 2px 20px" + blue;
       setTimeout(function () {
       icon.style.visibility = "visible";
-      }, 200);
+      }, 250);
       // icon.style.zIndex = 1;
     } else if (entry.isIntersecting) {
       header.style.background = "transparent";
