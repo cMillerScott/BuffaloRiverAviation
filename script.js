@@ -11,7 +11,7 @@ const sliders = document.querySelectorAll(".slide-in");
 
 // navigation animation
 
-const navObserverOptions = { threshold: 0.85 };
+const navObserverOptions = { threshold: 0.75 };
 const navObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
@@ -20,7 +20,6 @@ const navObserver = new IntersectionObserver(function (entries, observer) {
       setTimeout(function () {
       icon.style.visibility = "visible";
       }, 250);
-      // icon.style.zIndex = 1;
     } else if (entry.isIntersecting) {
       header.style.background = "transparent";
       header.style.boxShadow = "none";
@@ -33,7 +32,7 @@ navObserver.observe(intro);
 
 // slide-in animation
 
-const appearOptions = { threshold: 1 };
+const appearOptions = { rootMargin: "-250px" };
 
 const appearOnScroll = new IntersectionObserver(function (
   entries,

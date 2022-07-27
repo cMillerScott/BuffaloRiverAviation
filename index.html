@@ -61,17 +61,21 @@
     <link rel="stylesheet" href="style.css" />
     <!-- TODO: Update styles -->
     <link rel="stylesheet" href="/styles/css/print.css" media="print" />
+    <script
+      src="https://kit.fontawesome.com/61b4c84353.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <a href="#about">
         <img
           class="icon"
-          src="/Assets/Artwork/Buffalo-River-Aviation/horns-white-transparent.png"
+          src="/Assets/Artwork/Buffalo-River-Aviation/horns-gold-transparent.png"
         />
       </a>
-      <nav class="nav">
-        <ul class="nav-list">
+      <nav aria-label="Primary" class="nav">
+        <ul role="list" class="nav-list">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -82,13 +86,13 @@
     <main>
       <section>
         <div class="intro">
-     
           <div class="mission">
-            <img src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png" />
+            <img
+              src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
+            />
             <h3>AVIATION PERFECTED</h3>
           </div>
         </div>
-
       </section>
 
       <section class="about">
@@ -142,23 +146,36 @@
 
     <footer class="footer">
       <div class="link-content">
-        <div class="links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+          <nav aria-label="Footer" class="footer-nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+      
         <div class="stamp">
-          <img src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png" />
+          <img
+            src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
+          />
         </div>
+        <div class="right-column">
+          <div class="email">
+            <form action="">
+              <input type="email">
+              <button class="button">send</button>
+            </form>
+          </div>
         <div class="social">
           <ul>
-            <!-- <li><a href="#facebook">Facebook</a></li> -->
-            <li><a href="#instagram">Instagram</a></li>
-            <!-- <li><a href="#twitter">Twitter</a></li> -->
+            <li>
+              <a aria-label="instagram" href="#instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
           </ul>
         </div>
+      </div>
       </div>
 
       <div class="copyright">
