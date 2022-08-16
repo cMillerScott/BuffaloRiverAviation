@@ -11,9 +11,9 @@ const winWidth = window.innerWidth;
 // const images = document.querySelectorAll("[data-src]");
 
 // reload page on window resize
-window.onresize = () => {
-  location.reload();
-}
+// window.onresize = () => {
+//   location.reload();
+// }
 
 // navigation animation
 
