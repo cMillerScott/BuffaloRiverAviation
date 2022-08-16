@@ -2,33 +2,47 @@
 
 const header = document.querySelector(".header");
 const icon = document.querySelector(".icon");
-const intro = document.querySelector(".intro");
+const hero = document.querySelector(".hero");
 const blue = getComputedStyle(document.documentElement).getPropertyValue(
   "--blue"
 );
 const sliders = document.querySelectorAll(".slide-in");
+const winWidth = window.innerWidth;
 // const images = document.querySelectorAll("[data-src]");
+
+// reload page on window resize
+window.onresize = () => {
+  location.reload();
+}
 
 // navigation animation
 
-const navObserverOptions = { threshold: 0.75 };
+const navObserverOptions = { threshold: 1 };
 const navObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      header.style.background = blue;
-      header.style.boxShadow = "0px 2px 20px" + blue;
-      setTimeout(function () {
-      icon.style.visibility = "visible";
-      }, 250);
-    } else if (entry.isIntersecting) {
-      header.style.background = "transparent";
-      header.style.boxShadow = "none";
-      icon.style.visibility = "hidden";
+    if (winWidth >= 480) {
+      if (!entry.isIntersecting) {
+        header.style.background = blue;
+        header.style.boxShadow = "0px 2px 20px" + blue;
+      } else if (entry.isIntersecting) {
+        header.style.background = "transparent";
+        header.style.boxShadow = "none";
+        icon.style.display = "none";
+      }
+    }
+    if (winWidth >= 1280) {
+      if (!entry.isIntersecting) {
+        setTimeout(function () {
+          icon.style.display = "flex";
+        }, 250);
+      } else if (entry.isIntersecting) {
+        icon.style.display = "none";
+      }
     }
   });
 }, navObserverOptions);
 
-navObserver.observe(intro);
+navObserver.observe(hero);
 
 // slide-in animation
 
