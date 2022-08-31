@@ -343,8 +343,10 @@ body {
 
   .about-us p {
     width: 70%;
+  }
+
+  .from-right {
     margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 }
 
