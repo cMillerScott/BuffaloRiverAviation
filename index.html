@@ -31,24 +31,24 @@
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/Artwork/Buffalo-River-Aviation/favicons/apple-touch-icon.png"
+      href="/Assets/Artwork/Buffalo-River-Aviation/favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/Artwork/Buffalo-River-Aviation/favicons/favicon-32x32.png"
+      href="/Assets/Artwork/Buffalo-River-Aviation/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/Artwork/Buffalo-River-Aviation/favicons/favicon-16x16.png"
+      href="/Assets/Artwork/Buffalo-River-Aviation/favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/Artwork/Buffalo-River-Aviation/favicons/safari-pinned-tab.svg"
+      href="/Assets/Artwork/Buffalo-River-Aviation/favicons/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -76,9 +76,13 @@
       </a>
       <nav aria-label="Primary" class="nav">
         <ul role="list" class="nav-list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li onclick="heroChange('about-hero')">
+            <a href="#about" id="about">ABOUT</a>
+          </li>
+          <li onclick="heroChange('services-hero')">
+            <a href="#services" id="services">SERVICES</a>
+          </li>
+          <li><a href="#contact" id="contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -90,12 +94,12 @@
             <img
               src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
             />
-            <h3>AVIATION PERFECTED</h3>
+            <h3>AVIATION PERSONALIZED</h3>
           </div>
         </div>
       </section>
 
-      <section class="about">
+      <section class="about-info">
         <div class="about-us">
           <h1>WHO WE ARE</h1>
 
@@ -146,14 +150,14 @@
 
     <footer class="footer">
       <div class="link-content">
-          <nav aria-label="Footer" class="footer-nav">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-      
+        <nav aria-label="Footer" class="footer-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
         <div class="stamp">
           <img
             src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
@@ -162,20 +166,29 @@
         <div class="right-column">
           <div class="email">
             <form action="">
-              <input class="email-input" type="email" placeholder="Send us your email." aria-label="email">
-              <button class="submit-email" aria-label="submit-email">SEND</button>
+              <input
+                class="email-input"
+                pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                required
+                type="email"
+                placeholder="Send us your email."
+                aria-label="email"
+              />
+              <button class="submit-email" aria-label="submit-email">
+                SEND
+              </button>
             </form>
           </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a aria-label="instagram" href="#instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
+          <div class="social">
+            <ul>
+              <li>
+                <a aria-label="instagram" href="#instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
 
       <div class="copyright">

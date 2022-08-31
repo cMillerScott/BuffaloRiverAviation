@@ -38,6 +38,8 @@ const navObserver = new IntersectionObserver(function (entries, observer) {
       } else if (entry.isIntersecting) {
         icon.style.display = "none";
       }
+    } else {
+      icon.style.display = "none";
     }
   });
 }, navObserverOptions);
@@ -46,19 +48,23 @@ navObserver.observe(hero);
 
 // slide-in animation
 
-const appearOptions = { rootMargin: "-250px" };
+let appearOptions = { root: null, threshold: 0.5 };
+
 
 const appearOnScroll = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("appear");
-      appearOnScroll.unobserve(entry.target);
-    }
+    // if (winWidth >= 800) {
+      if (!entry.isIntersecting) {
+        entry.target.classList.remove("appear");
+        return;
+      } else if (entry.isIntersecting) {
+        entry.target.classList.add("appear");
+        // appearOnScroll.unobserve(entry.target);
+      }
+    // }
   });
 },
 appearOptions);
@@ -94,3 +100,11 @@ sliders.forEach((slider) => {
 // images.forEach((image) => {
 //   imgObserver.observe(image);
 // });
+
+// const about = document.querySelector("about");
+
+// function heroChange(classLink) {
+//   hero.className = "hero";
+//   hero.classList.add(classLink);
+//   location.reload();
+// }
