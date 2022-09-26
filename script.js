@@ -3,6 +3,7 @@
 const header = document.querySelector(".header");
 const icon = document.querySelector(".icon");
 const hero = document.querySelector(".hero");
+const main = document.querySelector("main");
 const blue = getComputedStyle(document.documentElement).getPropertyValue(
   "--blue"
 );
@@ -17,7 +18,7 @@ const winWidth = window.innerWidth;
 
 // navigation animation
 
-const navObserverOptions = { threshold: 1 };
+const navObserverOptions = { threshold: 1};
 const navObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (winWidth >= 480) {
@@ -56,15 +57,14 @@ const appearOnScroll = new IntersectionObserver(function (
   appearOnScroll
 ) {
   entries.forEach((entry) => {
-    // if (winWidth >= 800) {
+    if (winWidth >= 800) {
       if (!entry.isIntersecting) {
         entry.target.classList.remove("appear");
         return;
       } else if (entry.isIntersecting) {
         entry.target.classList.add("appear");
-        // appearOnScroll.unobserve(entry.target);
       }
-    // }
+    }
   });
 },
 appearOptions);

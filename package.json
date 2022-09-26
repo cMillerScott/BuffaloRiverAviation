@@ -1,0 +1,23 @@
+{
+  "name": "bra-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cMillerScott/BuffaloRiverAviation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cMillerScott/BuffaloRiverAviation/issues"
+  },
+  "homepage": "https://github.com/cMillerScott/BuffaloRiverAviation#readme",
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "gsap": "^3.11.1"
+  }
+}

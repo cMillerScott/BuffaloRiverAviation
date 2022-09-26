@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Buffalo River Aviation : About</title>
+    <title>Buffalo River Aviation : Services</title>
     <!-- TODO: update page title -->
     <script type="module">
       document.documentElement.classList.remove("no-js");
@@ -68,29 +68,29 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html">
-        <img
-          class="icon"
-          src="/Assets/Artwork/Buffalo-River-Aviation/horns-gold-transparent.png"
-        />
-      </a>
-      <nav aria-label="Primary" class="nav">
-        <ul role="list" class="nav-list">
-          <li>
-            <a href="/index.html" id="about">ABOUT</a>
-          </li>
-          <li>
-            <a href="/services.html" id="services">SERVICES</a>
-          </li>
-          <li><a href="/contact.html" id="contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+        <a href="/index.html">
+          <img
+            class="icon"
+            src="/Assets/Artwork/Buffalo-River-Aviation/horns-gold-transparent.png"
+          />
+        </a>
+        <nav aria-label="Primary" class="nav">
+          <ul role="list" class="nav-list">
+            <li>
+              <a href="/index.html" id="about">ABOUT</a>
+            </li>
+            <li>
+              <a href="/services.html" id="services">SERVICES</a>
+            </li>
+            <li><a href="/contact.html" id="contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <main>
       <section>
-        <div class="hero">
-          <div class="mission">
+        <div class="hero services-hero">
+          <div class="services-mission">
             <img
               src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
             />
@@ -101,7 +101,7 @@
 
       <section class="about-info">
         <div class="about-us">
-          <h1>WHO WE ARE</h1>
+          <h1>WHAT WE DO</h1>
 
           <div class="about-content">
             <p class="slide-in from-left appear">
@@ -146,56 +146,57 @@
           </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="link-content">
+          <nav aria-label="Footer" class="footer-nav">
+            <ul>
+              <li><a href="/index.html">About</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+  
+          <div class="stamp">
+            <img
+              src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
+            />
+          </div>
+          <div class="right-column">
+            <div class="email">
+              <form action="">
+                <input
+                  class="email-input"
+                  pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                  required
+                  type="email"
+                  placeholder="Send us your email."
+                  aria-label="email"
+                />
+                <button class="submit-email" aria-label="submit-email">
+                  SEND
+                </button>
+              </form>
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a aria-label="instagram" href="#instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="copyright">
+          <p>&copy 2022 CNS, INC</p>
+        </div>
+      </footer>
     </main>
 
-    <footer class="footer">
-      <div class="link-content">
-        <nav aria-label="Footer" class="footer-nav">
-          <ul>
-            <li><a href="/index.html">About</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="stamp">
-          <img
-            src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
-          />
-        </div>
-        <div class="right-column">
-          <div class="email">
-            <form action="">
-              <input
-                class="email-input"
-                pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                required
-                type="email"
-                placeholder="Send us your email."
-                aria-label="email"
-              />
-              <button class="submit-email" aria-label="submit-email">
-                SEND
-              </button>
-            </form>
-          </div>
-          <div class="social">
-            <ul>
-              <li>
-                <a aria-label="instagram" href="#instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="copyright">
-        <p>&copy 2022 CNS, INC</p>
-      </div>
-    </footer>
-
+  
     <!-- Content -->
     <script src="script.js"></script>
     <!-- TODO: Update app entry point -->
