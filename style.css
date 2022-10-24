@@ -157,6 +157,7 @@ body {
 @media (max-width: 30em) {
   .header {
     background: var(--blue);
+    box-shadow: 0px 2px 20px var(--blue);
   }
 
   .nav-list {
@@ -379,7 +380,7 @@ body {
   transform: translateX(0);
 }
 
-/* < 480px hero */
+/* < 480px about content */
 
 @media (max-width: 35em) {
   .about-content {
@@ -440,12 +441,9 @@ body {
 
 .link-content {
   display: flex;
-  /* grid-auto-flow: column;
-    grid-auto-columns: 1fr; */
   width: 85%;
   border-bottom: 1.5px solid var(--white);
   margin-bottom: 1rem;
-  /* outline: 1px solid white; */
 }
 
 .link-content a {
@@ -571,6 +569,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* < 480px footer */ 
+
 @media (max-width: 42em) {
   .link-content {
     flex-direction: column;
@@ -599,7 +599,7 @@ body {
   }
 }
 
-/* > 1280px footer content */
+/* > 1280px footer */
 
 @media (min-width: 80em) {
   .link-content {
