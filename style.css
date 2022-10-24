@@ -166,7 +166,7 @@ body {
   }
 
   .nav-list li {
-    padding: 0.5rem;
+    padding: 1.25rem;
   }
 }
 
@@ -195,12 +195,13 @@ body {
 
   .nav-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
   }
 
   .nav-list li {
     font-size: var(--fs-550);
     letter-spacing: 0.5rem;
+    margin-right: 6rem;
   }
 
   .nav-list li:hover,
@@ -598,10 +599,16 @@ body {
   }
 }
 
+/* > 1280px footer content */
+
 @media (min-width: 80em) {
   .link-content {
     width: 60%;
   }
+
+.footer-nav li {
+  padding-top: 2rem;
+}
 
   .stamp {
     margin-right: 0rem;
