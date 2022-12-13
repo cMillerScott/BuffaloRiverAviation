@@ -340,6 +340,7 @@ body {
 
 .about-content {
   display: flex;
+  /* background-color: #142a4a; */
   align-items: center;
   justify-content: space-evenly;
   width: 100%;

@@ -161,7 +161,12 @@
         </div>
         <div class="right-column">
           <div class="email">
-            <form name="email-submission" method="post" netlify >
+            <form name="email-submission" method="post" netlify>
+              <input
+                type="hidden"
+                name="subject"
+                value="Email submission from buffaloriveraviation.com"
+              />
               <input
                 class="email-input"
                 name="email"
