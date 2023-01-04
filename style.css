@@ -241,7 +241,6 @@ body {
   width: 45rem;
   font-size: var(--fs-550);
   font-weight: var(--fw-bold);
-
 }
 
 .contact-mission h3 {
@@ -466,6 +465,7 @@ body {
   color: var(--white);
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--white);
+  appearance: none;
 }
 
 .placeholder {
@@ -475,16 +475,18 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-#message{
-resize: none;
-height: 8rem;
+#message {
+  appearance: none;
+  resize: none;
+  height: 8rem;
 }
 
 #message-label {
   bottom: 1.5rem;
 }
 
-.input:focus, .input:not(:placeholder-shown) {
+.input:focus,
+.input:not(:placeholder-shown) {
   border-radius: 0.25rem;
   border-bottom: none;
   height: 2rem;
@@ -505,7 +507,7 @@ height: 8rem;
 .contact-submit {
   align-self: center;
   cursor: pointer;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   color: var(--gold);
   border: 0;
   border-radius: 0.25rem;
