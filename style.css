@@ -476,8 +476,7 @@ body {
 
 textarea, input[type="text"], input[type="email"] {
   appearance: none;
-  border-radius:none;
-  outline: none;
+  border-radius: 0;
 }
 
 #message {
