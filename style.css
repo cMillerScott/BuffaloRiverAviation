@@ -435,7 +435,7 @@ body {
   color: var(--white);
   background-color: var(--blue);
   width: 70vw;
-  height: 65vh;
+  height: 50rem;
   border-radius: 0.5em;
   box-shadow: inset 0px 0px 10px -4px var(--blue), 0px 0px 20px -4px var(--blue);
 }
