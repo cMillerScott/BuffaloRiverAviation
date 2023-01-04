@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Buffalo River Aviation : Contact</title>
+    <title>Buffalo River Aviation : About</title>
     <!-- TODO: update page title -->
     <script type="module">
       document.documentElement.classList.remove("no-js");
@@ -68,7 +68,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html">
+      <a href="./index.html">
         <img
           class="icon"
           src="/Assets/Artwork/Buffalo-River-Aviation/horns-gold-transparent.png"
@@ -86,8 +86,8 @@
 
     <main>
       <section>
-        <div class="hero contact-hero">
-          <div class="contact-mission">
+        <div class="hero">
+          <div class="mission">
             <img
               src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
             />
@@ -96,108 +96,107 @@
         </div>
       </section>
 
-      <section class="contact-info">
-        <div class="contact-us">
-          <h1>GET IN TOUCH</h1>
+      <section class="about-info">
+        <div class="about-us">
+          <h1>WHO WE ARE</h1>
 
-          <div class="contact-content">
-            <form class="contact-form" netlify>
-              <div class="input-label">
-                  <input
-                  id="name"
-                  class="input"
-                  name="name"
-                  type="text"
-                  maxlength="50"
-                  placeholder=" "
-                  required
-                  />
-                  <label for="name" class="placeholder">NAME</label>
-              </div>
+          <div class="about-content">
+            <p class="slide-in from-left appear">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              nulla ex sit aliquid earum nostrum, magni iste commodi beatae
+              recusandae culpa ut soluta nemo ipsa. Praesentium dicta eligendi
+              autem deserunt!
+            </p>
+            <img
+              class="slide-in from-right appear"
+              src="/Assets/Photos/797tx.jpg"
+              alt="Citation Jet with gear down"
+            />
+          </div>
 
-              <div class="input-label">
-                  <input
-                  id="email"
-                  class="input"
-                  name="email"
-                  pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                  required
-                  type="email"
-                  placeholder=" "
-                  aria-label="email"
-                  />
-                  <label for="email" class="placeholder">EMAIL</label>
-              </div>
+          <div class="about-content">
+            <img
+              class="slide-in from-left appear"
+              src="/Assets/Photos/kapropsunset2.jpeg"
+              alt="View of sunset with airplane prop in the forefront"
+            />
+            <p class="slide-in from-right appear">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              nulla ex sit aliquid earum nostrum, magni iste commodi beatae
+              recusandae culpa ut soluta nemo ipsa. Praesentium dicta eligendi
+              autem deserunt!
+            </p>
+          </div>
 
-              <div class="input-label">
-                  <textarea
-                  id="message"
-                  class="input"
-                  type="text"
-                  maxlength="500"
-                  placeholder=" "
-                  required
-                  name="message"
-                  ></textarea>
-                  <label id="message-label" for="message" class="placeholder">MESSAGE</label>
-              </div>
+          <div class="about-content">
+            <p class="slide-in from-left appear">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              nulla ex sit aliquid earum nostrum, magni iste commodi beatae
+              recusandae culpa ut soluta nemo ipsa. Praesentium dicta eligendi
+              autem deserunt!
+            </p>
+            <img
+              class="slide-in from-right appear"
+              src="/Assets/Photos/pc12hangared.jpeg"
+              alt="Citation Jet interior cabin"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
-              <button class="contact-submit" type="submit">
+    <footer class="footer">
+      <div class="link-content">
+        <nav aria-label="Footer" class="footer-nav">
+          <ul>
+            <li><a href="/index.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="stamp">
+          <img
+            src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
+          />
+        </div>
+        <div class="right-column">
+          <div class="email">
+            <form name="email-submission" action="confirmation.html" method="post" netlify>
+              <input
+                type="hidden"
+                name="subject"
+                value="Email submission from buffaloriveraviation.com"
+              />
+              <input
+                class="email-input"
+                name="email"
+                pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                required
+                type="email"
+                placeholder="Send us your email."
+                aria-label="email"
+              />
+              <button class="submit-email" aria-label="submit-email">
                 SEND
               </button>
             </form>
           </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="link-content">
-          <nav aria-label="Footer" class="footer-nav">
+          <div class="social">
             <ul>
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li>
+                <a aria-label="instagram" href="#instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
             </ul>
-          </nav>
-
-          <div class="stamp">
-            <img
-              src="/Assets/Artwork/Buffalo-River-Aviation/326975-transparent.png"
-            />
-          </div>
-          <div class="right-column">
-            <div class="email">
-              <form name="email-submission" method="post" netlify>
-                <input
-                  class="email-input"
-                  name="email"
-                  pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                  required
-                  type="email"
-                  placeholder="Send us your email."
-                  aria-label="email"
-                />
-                <button class="submit-email" aria-label="submit-email">
-                  SEND
-                </button>
-              </form>
-            </div>
-            <div class="social">
-              <ul>
-                <li>
-                  <a aria-label="instagram" href="#instagram"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
+      </div>
 
-        <div class="copyright">
-          <p>&copy 2022 CNS, INC</p>
-        </div>
-      </footer>
-    </main>
+      <div class="copyright">
+        <p>&copy 2022 CNS, INC</p>
+      </div>
+    </footer>
 
     <!-- Content -->
     <script src="script.js"></script>

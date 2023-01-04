@@ -150,7 +150,7 @@
         <nav aria-label="Footer" class="footer-nav">
           <ul>
             <li><a href="/index.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -161,7 +161,7 @@
         </div>
         <div class="right-column">
           <div class="email">
-            <form name="email-submission" method="post" netlify>
+            <form name="email-submission" action="confirmation.html" method="post" netlify>
               <input
                 type="hidden"
                 name="subject"
@@ -173,7 +173,7 @@
                 pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
                 required
                 type="email"
-                placeholder="Send us your email."
+                placeholder="Send us your email"
                 aria-label="email"
               />
               <button class="submit-email" aria-label="submit-email">

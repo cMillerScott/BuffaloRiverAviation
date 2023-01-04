@@ -217,7 +217,6 @@ body {
 /* 480px <> 1280px hero */
 
 .hero,
-.services-hero,
 .contact-hero {
   display: flex;
   justify-content: center;
@@ -226,16 +225,11 @@ body {
   background-image: url("/Assets/Photos/clouds.jpg");
 }
 
-.services-hero {
-  background-image: url("/Assets/Photos/runwayaproach.jpeg");
-}
-
 .contact-hero {
   background-image: url("/Assets/Photos/mtnclouds\(cropped\).jpg");
 }
 
 .mission,
-.services-mission,
 .contact-mission {
   display: flex;
   flex-direction: column;
@@ -247,35 +241,26 @@ body {
   width: 45rem;
   font-size: var(--fs-550);
   font-weight: var(--fw-bold);
-  position: relative;
-}
 
-.services-mission h3 {
-  position: absolute;
-  top: 72%;
 }
 
 .contact-mission h3 {
-  position: absolute;
-  top: 90%;
+  transform: translateY(-3rem);
 }
 
 /* < 480px hero */
 @media (max-width: 30em) {
   .hero,
-  .services-hero,
   .contact-hero {
     margin-top: 9rem;
     padding-bottom: 0rem;
   }
 
-  .services-hero,
   .contact-hero {
     padding-bottom: 4rem;
   }
 
   .mission h3,
-  .services-mission h3,
   .contact-mission h3 {
     text-align: center;
   }
@@ -285,7 +270,6 @@ body {
 
 @media (min-width: 80em) {
   .hero,
-  .services-hero,
   .contact-hero {
     padding-bottom: 3.65rem;
   }
@@ -295,14 +279,9 @@ body {
   }
 
   .mission,
-  .services-mission,
   .contact-mission {
     margin-top: -2rem;
     font-size: var(--fs-600);
-  }
-
-  .services-mission h3 {
-    top: 75%;
   }
 
   .contact-mission h3 {
@@ -340,7 +319,6 @@ body {
 
 .about-content {
   display: flex;
-  /* background-color: #142a4a; */
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -423,6 +401,127 @@ body {
   }
 }
 
+/* main contact content */
+
+.contact-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  letter-spacing: 0.25rem;
+  overflow: hidden;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  border-bottom: 2.5px solid var(--blue);
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--blue);
+  width: 70vw;
+  height: 65vh;
+  border-radius: 0.5em;
+  box-shadow: inset 0px 0px 10px -4px var(--blue), 0px 0px 20px -4px var(--blue);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: var(--fw-bold);
+  width: 60%;
+  height: 100%;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  border: 0;
+  letter-spacing: 0.2rem;
+  font-size: var(--fs-450);
+  font-weight: var(--fw-bold);
+  padding: 0.25rem;
+  background-color: var(--blue);
+  color: var(--white);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--white);
+}
+
+.placeholder {
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#message{
+resize: none;
+height: 8rem;
+}
+
+#message-label {
+  bottom: 1.5rem;
+}
+
+.input:focus, .input:not(:placeholder-shown) {
+  border-radius: 0.25rem;
+  border-bottom: none;
+  height: 2rem;
+  background-color: #40526c;
+  outline: 2px solid var(--white);
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-1.5rem) scale(0.75);
+}
+
+.input:focus ~ #message-label,
+.input:not(:placeholder-shown) ~ #message-label {
+  transform: translateY(-7.5rem) scale(0.75);
+}
+
+.contact-submit {
+  align-self: center;
+  cursor: pointer;
+  padding: .5rem .5rem;
+  color: var(--gold);
+  border: 0;
+  border-radius: 0.25rem;
+  letter-spacing: 0.25rem;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0 var(--gold);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+  border: 0;
+  color: var(--blue);
+  box-shadow: inset 0rem 0 8rem 0 var(--gold);
+}
+
 /* footer */
 
 .footer {
@@ -503,8 +602,6 @@ body {
   justify-content: flex-end;
   text-align: right;
   padding: 2rem 0rem;
-
-  /* outline: 1px solid white; */
 }
 
 .email-input {
@@ -570,7 +667,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* < 480px footer */ 
+/* < 480px footer */
 
 @media (max-width: 42em) {
   .link-content {
@@ -607,9 +704,9 @@ body {
     width: 60%;
   }
 
-.footer-nav li {
-  padding-top: 2rem;
-}
+  .footer-nav li {
+    padding-top: 2rem;
+  }
 
   .stamp {
     margin-right: 0rem;
