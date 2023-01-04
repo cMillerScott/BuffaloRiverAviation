@@ -491,6 +491,7 @@ textarea, input[type="text"], input[type="email"] {
 
 .input:focus,
 .input:not(:placeholder-shown) {
+  appearance: none;
   border-radius: 0.25rem;
   border-bottom: none;
   height: 2rem;
