@@ -476,7 +476,7 @@ body {
 
 textarea, input[type="text"], input[type="email"] {
   appearance: none;
-  border:none;
+  border-radius:none;
   outline: none;
 }
 
