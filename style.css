@@ -475,8 +475,11 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+textarea, input[type="text"], input[type="emial"] {
+  -webkit-appearance: none;
+}
+
 #message {
-  appearance: none;
   resize: none;
   height: 8rem;
 }
@@ -487,8 +490,7 @@ body {
 
 .input:focus,
 .input:not(:placeholder-shown) {
-  appearance: none;
-  /* border-radius: 0.25rem; */
+  border-radius: 0.25rem;
   border-bottom: none;
   height: 2rem;
   background-color: #40526c;
