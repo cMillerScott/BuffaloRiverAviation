@@ -465,7 +465,6 @@ body {
   color: var(--white);
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--white);
-  appearance: none;
 }
 
 .placeholder {
@@ -477,6 +476,8 @@ body {
 
 textarea, input[type="text"], input[type="email"] {
   appearance: none;
+  border:none;
+  outline: none;
 }
 
 #message {
