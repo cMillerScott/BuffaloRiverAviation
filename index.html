@@ -161,7 +161,12 @@
         </div>
         <div class="right-column">
           <div class="email">
-            <form name="email-submission" action="confirmation.html" method="post" netlify>
+            <form
+              name="email-submission"
+              action="confirmation.html"
+              method="post"
+              netlify
+            >
               <input
                 type="hidden"
                 name="subject"
@@ -169,16 +174,16 @@
               />
               <div class="input-label">
                 <input
-                class="email-input input"
-                name="email2"
-                pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                required
-                type="email"
-                placeholder=" "
-                aria-label="email"
+                  class="email-input input"
+                  name="email2"
+                  pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                  required
+                  type="email"
+                  placeholder=" "
+                  aria-label="email"
                 />
                 <label for="email2" class="placeholder">EMAIL</label>
-            </div>
+              </div>
               <button class="submit-email" aria-label="submit-email">
                 SEND
               </button>
