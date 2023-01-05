@@ -24,7 +24,7 @@ const navObserver = new IntersectionObserver(function (entries, observer) {
     if (winWidth >= 480) {
       if (!entry.isIntersecting) {
         header.style.background = blue;
-        header.style.boxShadow = "0px 2px 20px" + blue;
+        header.style.boxShadow = "0px .5px 20px black";
       } else if (entry.isIntersecting) {
         header.style.background = "transparent";
         header.style.boxShadow = "none";

@@ -474,7 +474,9 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-textarea, input[type="text"], input[type="email"] {
+textarea,
+input[type="text"],
+input[type="email"] {
   appearance: none;
   border-radius: 0;
 }
@@ -529,7 +531,6 @@ textarea, input[type="text"], input[type="email"] {
 }
 
 /* footer */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -539,7 +540,7 @@ textarea, input[type="text"], input[type="email"] {
     180deg,
     rgba(20, 42, 74, 0.8) 0%,
     rgba(20, 42, 74, 0.9) 65%,
-    rgba(20, 42, 74, 1) 100%
+    #142a4a 100%
   );
   color: var(--white);
   width: 100%;
@@ -651,10 +652,6 @@ textarea, input[type="text"], input[type="email"] {
   color: var(--blue);
   box-shadow: inset 0rem 0 8rem 0 var(--gold);
 }
-
-/* .social {
-  width: 100%;
-} */
 
 .social li {
   text-align: right;
