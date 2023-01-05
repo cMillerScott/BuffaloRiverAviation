@@ -149,8 +149,8 @@
       <div class="link-content">
         <nav aria-label="Footer" class="footer-nav">
           <ul>
-            <li><a href="/index.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/index.html">ABOUT</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -167,15 +167,18 @@
                 name="subject"
                 value="Email submission from buffaloriveraviation.com"
               />
-              <input
-                class="email-input"
-                name="email"
+              <div class="input-label">
+                <input
+                class="email-input input"
+                name="email2"
                 pattern="[a-zA-Z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
                 required
                 type="email"
-                placeholder="Send us your email"
+                placeholder=" "
                 aria-label="email"
-              />
+                />
+                <label for="email2" class="placeholder">EMAIL</label>
+            </div>
               <button class="submit-email" aria-label="submit-email">
                 SEND
               </button>
