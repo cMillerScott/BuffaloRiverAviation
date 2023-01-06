@@ -101,7 +101,17 @@
           <h1>GET IN TOUCH</h1>
 
           <div class="contact-content">
-            <form class="contact-form" netlify>
+            <form
+            name="contact-form"
+            action="confirmation.html"
+            method="post"
+            netlify
+          >
+          <input
+          type="hidden"
+          name="subject"
+          value="Contact form submission from buffaloriveraviation.com"
+        />
               <div class="input-label">
                 <input
                   id="name"
@@ -168,7 +178,7 @@
             <div class="email">
               <form
                 name="email-submission"
-                action="/confirmation.html"
+                action="confirmation.html"
                 method="post"
                 netlify
               >
